@@ -7,20 +7,9 @@ const { PaperContainer, Circle, Layer } = loadable(
   { ssr: false }
 );
 
-// import { PaperContainer, Circle, Layer } from "@psychobolt/react-paperjs";
-// const { PaperContainer, Circle, Layer } = loadable.lib(
-//   () => import("@psychobolt/react-paperjs"),
-//   { ssr: false }
-// );
-// const Top = loadable.lib(() => import("../paper/top"), { ssr: false });
-
 // const Shapes = () => (
 //   <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
 // );
-
-// const Shapes = loadable(() => (
-//   <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
-// ));
 
 const IndexPage = ({ props }) => {
   return (
@@ -35,12 +24,12 @@ const IndexPage = ({ props }) => {
         </span>
       </h1>
       <div>
-        <PaperContainer {...props}>
-          {/* <Circle center={[80, 50]} radius={35} fillColor="red" /> */}
+        {/* <PaperContainer {...props}>
+          <Circle center={[80, 50]} radius={35} fillColor="red" />
           <Layer>
             <Shapes />
           </Layer>
-        </PaperContainer>
+        </PaperContainer> */}
       </div>
       <p>
         Edit <code>src/pages/index.js</code> to see this page update in
