@@ -2,14 +2,11 @@ import * as React from "react";
 import * as styles from "./PageStyles.module.scss";
 import loadable from "@loadable/component";
 
-const { PaperContainer, Circle, Layer } = loadable(
-  () => import("@psychobolt/react-paperjs"),
-  { ssr: false }
-);
+import { PaperContainer, Circle, Layer } from "@psychobolt/react-paperjs";
 
-// const Shapes = () => (
-//   <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
-// );
+const Shapes = () => (
+  <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
+);
 
 const IndexPage = ({ props }) => {
   return (
@@ -24,12 +21,12 @@ const IndexPage = ({ props }) => {
         </span>
       </h1>
       <div>
-        {/* <PaperContainer {...props}>
+        <PaperContainer {...props}>
           <Circle center={[80, 50]} radius={35} fillColor="red" />
           <Layer>
             <Shapes />
           </Layer>
-        </PaperContainer> */}
+        </PaperContainer>
       </div>
       <p>
         Edit <code>src/pages/index.js</code> to see this page update in
