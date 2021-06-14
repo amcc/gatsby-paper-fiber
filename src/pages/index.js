@@ -1,8 +1,13 @@
-import React, { useState } from "react";
-import * as styles from "./PageStyles.module.scss";
+import React from "react";
 import loadable from "@loadable/component";
 
-const PaperComponent = loadable(() => import("../components/Paper"));
+const ReactPaperComponent = loadable(
+  async () =>
+    (await import("../components/ReactPaperComponent")).ReactPaperComponent,
+  {
+    fallback: <>Loading...</>,
+  }
+);
 
 // import { PaperComponent } from "../components/Paper";
 
@@ -11,7 +16,7 @@ const IndexPage = ({ props }) => {
     <main>
       <title>Home Page</title>
       <div>
-        <PaperComponent />
+        <ReactPaperComponent />
       </div>
     </main>
   );

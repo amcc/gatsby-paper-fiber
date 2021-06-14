@@ -2,10 +2,11 @@ import React from "react";
 
 import { PaperContainer, Circle, Layer } from "@psychobolt/react-paperjs";
 
-const PaperComponent = ({ props }) => {
-  const Shapes = () => (
-    <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
-  );
+const Shapes = () => (
+  <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
+);
+
+const ReactPaperComponent = ({ props }) => {
   return (
     <>
       <div>
@@ -20,4 +21,4 @@ const PaperComponent = ({ props }) => {
   );
 };
 
-export default PaperComponent;
+export { ReactPaperComponent };
