@@ -1,14 +1,27 @@
 import * as React from "react";
 import * as styles from "./PageStyles.module.scss";
-import loadable from "@loadable/component";
+// import loadable from "@loadable/component";
+
+//
+// this isn't working on develop
+//
+// const { PaperContainer, Circle, Layer } = loadable(
+//   () => import("@psychobolt/react-paperjs"),
+//   {
+//     fallback: <>Loading...</>,
+//   }
+// );
+
+//
+// this works on develop - wont build
+//
 
 import { PaperContainer, Circle, Layer } from "@psychobolt/react-paperjs";
 
-const Shapes = () => (
-  <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
-);
-
 const IndexPage = ({ props }) => {
+  const Shapes = () => (
+    <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />
+  );
   return (
     <main>
       <title>Home Page</title>
@@ -29,8 +42,6 @@ const IndexPage = ({ props }) => {
         </PaperContainer>
       </div>
       <p>
-        Edit <code>src/pages/index.js</code> to see this page update in
-        real-time.{" "}
         <span role="img" aria-label="Sunglasses smiley emoji">
           😎
         </span>

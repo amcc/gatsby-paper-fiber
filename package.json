@@ -1,8 +1,8 @@
 {
-  "name": "paper-matter-fiber",
+  "name": "paper-fiber",
   "version": "1.0.0",
   "private": true,
-  "description": "paper-matter-fiber",
+  "description": "paper-fiber",
   "author": "amcc",
   "keywords": [
     "gatsby"
